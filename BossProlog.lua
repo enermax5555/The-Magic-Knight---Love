@@ -8,7 +8,7 @@ function love.load()
   pointer = love.mouse.getSystemCursor('hand')
   normalMouse = love.mouse.getSystemCursor('arrow')
   dragon = {}
-  dragon.img = love.graphics.newImage('DragonProlog.jpg')
+  dragon.img = love.graphics.newImage('Assets/Images/DragonProlog.jpg')
   dragon.quad = love.graphics.newQuad(25, 0, 1100, 750, 1100, 750)
   dragon.x = 0
   dragon.y = 0

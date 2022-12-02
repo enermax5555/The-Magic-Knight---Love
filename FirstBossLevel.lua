@@ -51,34 +51,34 @@ local victoryDelay = 0
 local victoryDelayMax = 5
 
 function love.load()
-  epicBossMelody = love.audio.newSource('BossBattle.mp3', 'stream')
+  epicBossMelody = love.audio.newSource('Assets/Sounds/BossBattle.mp3', 'stream')
   epicBossMelody:setVolume(0.3)
   epicBossMelody:play()
-  characterHitted = love.audio.newSource('CharacterHitted.mp3', 'static')
+  characterHitted = love.audio.newSource('Assets/Sounds/CharacterHitted.mp3', 'static')
   characterHitted:setVolume(0.2)
-  dragonHitted = love.audio.newSource('MeteoriteHitSound.mp3', 'static')
+  dragonHitted = love.audio.newSource('Assets/Sounds/MeteoriteHitSound.mp3', 'static')
   dragonHitted:setVolume(0.2)
-  Background = love.graphics.newImage('BossBackGround.jpg')
+  Background = love.graphics.newImage('Assets/Images/BossBackGround.jpg')
   BackgroundQuad = Quad(0, 50, 1024, 820, Background:getDimensions())
   -- lolthefakisthis = love.graphics.newImage('Dragon.png')
-  SomeUsefulSprites = love.graphics.newImage('SomeusefulspritesReworked.png')
+  SomeUsefulSprites = love.graphics.newImage('Assets/Images/SomeusefulspritesReworked.png')
   attackImg = Quad(330, 90, 60, 85, 1000, 1080)
-  Hearth = love.graphics.newImage('Hearth.png')
+  Hearth = love.graphics.newImage('Assets/Images/Hearth.png')
   hearthQuad = Quad(0, 0, 40, 40, 40, 40)
   dragonFireBall = Quad(0, 0, 80, 80, 80, 80)
   love.mouse.setCursor(normalMouse)
   ---------- Boss --------------
   dragon = {}
-  dragon.boss = love.graphics.newImage('Dragon.png')
-  dragon.smallAttack = love.graphics.newImage('DragonSmallAttack.png')
-  dragon.fireBall = love.graphics.newImage('smallDragonAttack.png')
-  dragon.dying = love.graphics.newImage('DragonDying.png')
+  dragon.boss = love.graphics.newImage('Assets/Images/Dragon.png')
+  dragon.smallAttack = love.graphics.newImage('Assets/Images/DragonSmallAttack.png')
+  dragon.fireBall = love.graphics.newImage('Assets/Images/smallDragonAttack.png')
+  dragon.dying = love.graphics.newImage('Assets/Images/DragonDying.png')
   dragon.x = 1000
   dragon.y = 415
   dragon.health = 250
   ----------- Player ------------------
     character = {}
-    character.player = love.graphics.newImage('pngegg.png')
+    character.player = love.graphics.newImage('Assets/Images/pngegg.png')
     character.GroundLevel = 530
     character.speed = 200
     character.dmg = 25

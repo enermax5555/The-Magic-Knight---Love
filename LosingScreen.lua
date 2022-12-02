@@ -27,16 +27,16 @@ function love.load()
   menuMbutton = {}
   menuMbutton.x = 320
   menuMbutton.y = 535
-  losingScreen = love.graphics.newImage('LosingScreen.jpg')
+  losingScreen = love.graphics.newImage('Assets/Images/LosingScreen.jpg')
   lScreen = love.graphics.newQuad(0, 0, 650, 600, 650, 600)
-  youLose = love.graphics.newImage('YouLose.jpg')
-  retryButton = love.graphics.newImage('RetryButton6.png')
+  youLose = love.graphics.newImage('Assets/Images/YouLose.jpg')
+  retryButton = love.graphics.newImage('Assets/Images/RetryButton6.png')
   retryButtonQuad = love.graphics.newQuad(0, 0, 40, 40, 40, 40)
-  exitButton = love.graphics.newImage('ExitButton.jpg')
+  exitButton = love.graphics.newImage('Assets/Images/ExitButton.jpg')
   exitButtonQuad = love.graphics.newQuad(0, 35, 100, 30, 100, 100)
-  menuButton = love.graphics.newImage('MenuButton.jpg')
+  menuButton = love.graphics.newImage('Assets/Images/MenuButton.jpg')
   menuButtonQuad = love.graphics.newQuad(5, 35, 95, 30, 100, 100)
-  losingSound = love.audio.newSource('GameOver.mp3', 'static')
+  losingSound = love.audio.newSource('Assets/Sounds/GameOver.mp3', 'static')
   losingSound:setVolume(0.5)
   losingSound:play(losingSound)
 end

@@ -113,33 +113,33 @@ normalMouse = love.mouse.getSystemCursor('arrow')
   ScreenWidth = love.graphics.getWidth()
   ScreenHeight = love.graphics.getHeight()
 ----------- Sound Area ------------
-  music = love.audio.newSource('GameMusic.mp3', 'stream')
+  music = love.audio.newSource('Assets/Sounds/GameMusic.mp3', 'stream')
   music:setVolume(0.05)
-  meteoriteSound = love.audio.newSource('MeteoriteOld.wav', 'static')
+  meteoriteSound = love.audio.newSource('Assets/Sounds/MeteoriteOld.wav', 'static')
   meteoriteSound:setVolume(0.2)
-  bombSound = love.audio.newSource('Bomb.wav', 'static')
+  bombSound = love.audio.newSource('Assets/Sounds/Bomb.wav', 'static')
   bombSound:setVolume(0.1)
-  coinSound = love.audio.newSource('CoinOld.wav', 'static')
+  coinSound = love.audio.newSource('Assets/Sounds/CoinOld.wav', 'static')
   coinSound:setVolume(0.2)
-  buffsSound = love.audio.newSource('BuffSound.mp3', 'static')
+  buffsSound = love.audio.newSource('Assets/Sounds/BuffSound.mp3', 'static')
   buffsSound:setVolume(0.2)
-  meteoriteHitted = love.audio.newSource('MeteoriteHitSound.mp3', 'static')
+  meteoriteHitted = love.audio.newSource('Assets/Sounds/MeteoriteHitSound.mp3', 'static')
   meteoriteHitted:setVolume(0.1)
-  characterHitted = love.audio.newSource('CharacterHitted.mp3', 'static')
+  characterHitted = love.audio.newSource('Assets/Sounds/CharacterHitted.mp3', 'static')
   characterHitted:setVolume(0.3)
-  dyingMelody = love.audio.newSource('Dying.mp3', 'static')
+  dyingMelody = love.audio.newSource('Assets/Sounds/Dying.mp3', 'static')
   dyingMelody:setVolume(0.3)
 ----------- Fonts -----------
   love.graphics.setFont(font)
 ----------- Terrain Loader ----------
-  sky = love.graphics.newImage('SkyBackGroundCloudSync.png')
-  grassGroundLevel = love.graphics.newImage('SampleGrassBlock.png')
-  cloud1move.obj = love.graphics.newImage('CloudSource.png')
-  Hearth = love.graphics.newImage('Hearth.png')
-  SomeUsefulSprites = love.graphics.newImage('SomeusefulspritesReworked.png')
-  Buffs = love.graphics.newImage('BuffImage.jpg')
-  sBuffs = love.graphics.newImage('SpeedBuff.jpg')
-  pauseIcon = love.graphics.newImage('PauseGameIcon.png')
+  sky = love.graphics.newImage('Assets/Images/SkyBackGroundCloudSync.png')
+  grassGroundLevel = love.graphics.newImage('Assets/Images/SampleGrassBlock.png')
+  cloud1move.obj = love.graphics.newImage('Assets/Images/CloudSource.png')
+  Hearth = love.graphics.newImage('Assets/Images/Hearth.png')
+  SomeUsefulSprites = love.graphics.newImage('Assets/Images/SomeusefulspritesReworked.png')
+  Buffs = love.graphics.newImage('Assets/Images/BuffImage.jpg')
+  sBuffs = love.graphics.newImage('Assets/Images/SpeedBuff.jpg')
+  pauseIcon = love.graphics.newImage('Assets/Images/PauseGameIcon.png')
 
 ----------- Objectives ------------
 -- Pause Button --
@@ -181,18 +181,18 @@ sBuffText.y = 250
   lives.x = 0
 -- Angle --
 angel = {}
-angel.obj = love.graphics.newImage('Creatures.png')
+angel.obj = love.graphics.newImage('Assets/Images/Creatures.png')
 angel.x = 0
 angel.y = 400
 -- Coins --
   coin = {}
-  coin.obj = love.graphics.newImage('coin.png')
+  coin.obj = love.graphics.newImage('Assets/Images/coin.png')
   coin.x = love.math.random(1000, 1400)
   coin.y = 365
 -- Meteorite --
   meteorite = {}
   meteorite.health = 100
-  meteorite.obj = love.graphics.newImage('Meteorite.png')
+  meteorite.obj = love.graphics.newImage('Assets/Images/Meteorite.png')
   meteorite.x = love.math.random(1000, 1400)
   meteorite.y = 330
   MeteoriteExplosions = {}
@@ -200,7 +200,7 @@ angel.y = 400
   MeteoriteExplosions.y = 200
 -- Bomb --
   bomb = {}
-  bomb.obj = love.graphics.newImage('NormalBombNewReworked.png')
+  bomb.obj = love.graphics.newImage('Assets/Images/NormalBombNewReworked.png')
   bomb.x = love.math.random(1000, 3000)
   bomb.y = 470
   bombExplosion = {}
@@ -208,7 +208,7 @@ angel.y = 400
   bombExplosion.y = 350
 ----------- Player ------------------
   character = {}
-  character.player = love.graphics.newImage('pngegg.png')
+  character.player = love.graphics.newImage('Assets/Images/pngegg.png')
   character.GroundLevel = 415
   character.speed = 200
 ----------- Player Position ------------

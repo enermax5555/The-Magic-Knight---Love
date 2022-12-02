@@ -17,17 +17,17 @@ function love.load()
   menuMbutton.x = 10
   menuMbutton.y = 680
   victory = {}
-  victory.music = love.audio.newSource('Victory.mp3', 'stream')
+  victory.music = love.audio.newSource('Assets/Sounds/Victory.mp3', 'stream')
   victory.music:play()
-  victory.img = love.graphics.newImage('victory2.jpg')
+  victory.img = love.graphics.newImage('Assets/Images/victory2.jpg')
   victory.x = 0
   victory.y = -1000
   g = love.graphics.getHeight()
   gg = love.graphics.getWidth()
   victory.quad = love.graphics.newQuad(190, 100, 1100, 1000, 1400, 1200)
-  exitButton = love.graphics.newImage('ExitButton.jpg')
+  exitButton = love.graphics.newImage('Assets/Images/ExitButton.jpg')
   exitButtonQuad = love.graphics.newQuad(6, 35, 89, 30, 100, 100)
-  menuButton = love.graphics.newImage('MenuButton.jpg')
+  menuButton = love.graphics.newImage('Assets/Images/MenuButton.jpg')
   menuButtonQuad = love.graphics.newQuad(6, 36, 89, 29, 100, 100)
 end
 function love.update(dt)

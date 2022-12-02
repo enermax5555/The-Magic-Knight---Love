@@ -38,15 +38,15 @@ function love.load()
   backArrowButton.x = 450
   backArrowButton.y = 520
   button = 'l'
-  startMenuWallpaper = love.graphics.newImage('StartMenuWallpaper.png')
-  backArrow = love.graphics.newImage('BackArrow.png')
+  startMenuWallpaper = love.graphics.newImage('Assets/Images/StartMenuWallpaper.png')
+  backArrow = love.graphics.newImage('Assets/Images/BackArrow.png')
   WallPaperQuad = Quad(0, 0, 1050, 820, 1050, 820)
   backArrowQuad = Quad(0, 0, 50, 50, 50, 50)
-  menuMelody = love.audio.newSource('IntroMelody.mp3', 'stream')
+  menuMelody = love.audio.newSource('Assets/Sounds/IntroMelody.mp3', 'stream')
   menuMelody:setVolume(0.2)
-  menuHoverSound = love.audio.newSource('MenuSoundEffect.mp3', 'static')
+  menuHoverSound = love.audio.newSource('Assets/Sounds/MenuSoundEffect.mp3', 'static')
   menuHoverSound:setVolume(0.1)
-  selectMenu = love.audio.newSource('SelectMenu.mp3', 'static')
+  selectMenu = love.audio.newSource('Assets/Sounds/SelectMenu.mp3', 'static')
   selectMenu:setVolume(0.2)
 
 end
