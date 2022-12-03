@@ -3,10 +3,10 @@
 Simple game writed in Lua scripts, using the Lua extension for 2D animations: Love2D
 
 ## Introduction
-   >1. Gameplay
-   >2. Controls
-   >3. Features
-   >4. How to setup
+   >1. [Gameplay](#gameplay)
+   >2. [Controls](#controls)
+   >3. [Features](#features)
+   >4. [How to setup](#how-to-setup)
 
 ## Gameplay
 
